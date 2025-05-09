@@ -1,0 +1,353 @@
+/* Global Variables */
+:root {
+    --bg-dark: #0f172a;
+    --primary: #38bdf8;
+    --accent: #14b8a6;
+    --text-light: #f1f5f9;
+    /* --hover-glow: #f472b6; */
+  }
+  
+  /* Global Styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+  
+  /* Navigation */
+  header {
+    background-color: #020617;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  nav .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: var(--primary);
+    text-shadow: 0 0 10px var(--primary);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: var(--accent);
+    text-shadow: 0 0 8px var(--accent);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    color: var(--text-light);
+    padding: 3rem 1rem;
+    border-bottom: 2px solid var(--primary);
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+  }
+  
+  .hero-content {
+    flex: 1 1 500px;
+    text-align: left;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-image {
+    flex: 1 1 400px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* About Section */
+  .about {
+    padding: 4rem 2rem;
+    background-color: #1e293b;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid var(--primary);
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--primary);
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #cbd5e1;
+  }
+  
+  /* Education Section */
+  .education {
+    padding: 3rem 2rem;
+    text-align: center;
+    text-align: justify;
+    background-color: #0f172a;
+    border-bottom: 2px solid var(--primary);
+  }
+  
+  .education h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary);
+  }
+  
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 77px;
+    justify-items: center;
+  }
+  
+  .education-card {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(20, 184, 166, 0.3);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+  
+  .education-card img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .education-card h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: var(--text-light);
+  }
+  
+  .education-card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #94a3b8;
+  }
+  
+  
+  .education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px var(--primary);
+  }
+  
+  .education-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 5rem 2rem;
+    background-color: #1e293b;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary);
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact label {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #cbd5e1;
+  }
+  
+  .contact input,
+  .contact textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    background-color: #0f172a;
+    color: var(--text-light);
+  }
+  
+  .contact input:focus,
+  .contact textarea:focus {
+    border-color: var(--primary);
+    outline: none;
+  }
+  
+  .contact button {
+    background-color: var(--primary);
+    color: var(--bg-dark);
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px var(--primary);
+  }
+  
+  .contact button:hover {
+    background-color: var(--accent);
+    transform: translateY(-5px);
+    color: #fff;
+    box-shadow: 0 0 15px var(--accent);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #020617;
+    color: #94a3b8;
+    font-size: 1rem;
+    border-top: 1px solid var(--accent);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .hero-container {
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+  
+    .hero-content {
+      text-align: center;
+    }
+  
+    .hero {
+      padding: 4rem 1rem;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.8rem;
+    }
+  
+    .about,
+    .education,
+    .contact {
+      padding: 3rem 1rem;
+    }
+  
+    .about h2,
+    .education h2,
+    .contact h2 {
+      font-size: 2rem;
+    }
+  
+    .education-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact form {
+      max-width: 100%;
+    }
+  
+    .education-card {
+      max-width: 100%;
+      padding: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+  
+    nav ul li a {
+      font-size: 1rem;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+  
+    .education-card h3 {
+      font-size: 1.6rem;
+    }
+  
+    .education-card p {
+      font-size: 1rem;
+    }
+  
+    .contact button {
+      font-size: 1.1rem;
+    }
+  
+    footer {
+      padding: 2rem 1rem;
+    }
+  }

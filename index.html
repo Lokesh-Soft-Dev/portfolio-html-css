@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokesh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- Navigation Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Lokesh 👨‍💻</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Hi,<br>I'm Lokesh,<br>A Web Designer</h1>
+                <p>
+                    I’m a dedicated web developer with a strong focus on crafting seamless, modern, and responsive
+                    digital experiences that are both user-friendly and visually compelling.
+                </p>
+            </div>
+            <div class="hero-image">
+                <img src="./Images/Photo.jpg" alt="Lokesh - Web Developer" />
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+            I’m a <strong>Front-End Developer</strong> focused on creating intuitive, user-friendly web applications.
+            My goal is to write clean, well-documented code and build visually appealing user interfaces.
+        </p>
+        <p>
+            With experience in <strong>HTML, CSS, JavaScript</strong>, and exposure to <strong>React.js</strong>, I
+            enjoy building responsive websites that work seamlessly across all devices. I’m always eager to learn
+            new technologies and improve my skills.
+        </p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2 class="section-title">My Educational Journey</h2>
+        <div class="education-grid">
+            <div class="education-card">
+                <h3>Besant Technologies: Python Full Stack Development</h3>
+                <p>
+                    A comprehensive training program covering Python programming, front-end and back-end technologies,
+                    and database management for full-stack development.
+                </p>
+                <p><strong>Place:</strong> <i>Bengaluru</i></p>
+            </div>
+
+            <div class="education-card">
+                <h3>(PMKVY-TI): Junior Software Developer (JSD)</h3>
+                <p>
+                    A skill development program focused on the software development lifecycle, basic coding practices,
+                    and real-world application building.
+                </p>
+                <p><strong>Place:</strong> <i>Tirupati</i></p>
+            </div>
+
+            <div class="education-card">
+                <h3>PG - MCA</h3>
+                <p>
+                    A Master’s degree in Computer Applications providing deep knowledge of software development,
+                    algorithms, databases, and networks.
+                </p>
+                <p><strong>Place:</strong> <i>Tirupati</i></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to send me a message!</p>
+        <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 K. Lokesh 👨‍💻 All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
