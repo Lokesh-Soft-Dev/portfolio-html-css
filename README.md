@@ -21,3 +21,6 @@ This is a simple and responsive personal landing page created using HTML and CSS
 - CSS3 (Custom properties, Flexbox, Grid, Media Queries)
 
 ---
+## ✨ Author
+
+### LOKESH K
